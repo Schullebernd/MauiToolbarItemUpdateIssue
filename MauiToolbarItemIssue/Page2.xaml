@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiToolbarItemIssue.Page2"
+             Title="Page2">
+    <ContentPage.ToolbarItems>
+        <!-- This is the toolbar item with a plus icon -->
+        <ToolbarItem Text="new" Clicked="ToolbarItem_Clicked" x:Name="Page2Item">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe147;" Color="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Primary}}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+        <Label 
+            Text="Page 2 - Content"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

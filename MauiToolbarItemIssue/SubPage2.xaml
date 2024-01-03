@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiToolbarItemIssue.SubPage2"
+             Title="SubPage2">
+    <ContentPage.ToolbarItems>
+        <!-- This is a toolbaritem with no icons, only text. When navigating to this page icon from the previous (SubPage1) is shown here -->
+        <ToolbarItem Text="1/10" x:Name="SubPage2Item">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+        <Label 
+            Text="SubPage 2 - Content"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
